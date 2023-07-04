@@ -6,6 +6,7 @@ import Button from '@mui/material/Button'
 import bgImage from '../assets/images/bg2.jpg'
 import { theme } from "../assets/theme/theme"
 import { LazyLoadImage } from "react-lazy-load-image-component"
+import { Link } from "react-router-dom"
 
 export default function Hero() {
     return(
@@ -67,6 +68,8 @@ export default function Hero() {
                         Our catalog includes "Luxary", "Sport" and "Classic" watches
                     </Typography> 
                     <Button
+                        component={Link}
+                        to='/shopping-cart/shop'                        
                         variant="contained"
                         size="large"
                         sx={{

@@ -27,7 +27,7 @@ function Nav() {
                 >
                     <Button 
                         onClick={()=>setValue(1)}
-                        className={(value === 1 ? 'active': null),'btn'}
+                        className={`${(value === 1 ? 'active': null)},'btn'`}
                         sx={{            
                             color:'black',                                        
                             fontSize:'1.1rem',
@@ -48,7 +48,7 @@ function Nav() {
                 > 
                     <Button 
                         onClick={()=>setValue(2)}
-                        className={(value === 1 ? 'active': null), 'btn'}                
+                        className={`${(value === 1 ? 'active' : null)}, 'btn'`}                
                         sx={{            
                             color:'black',                  
                             fontSize:'1.1rem',
